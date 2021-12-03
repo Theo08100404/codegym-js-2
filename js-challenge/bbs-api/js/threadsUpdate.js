@@ -4,9 +4,10 @@ const upBtn = document.querySelector(".upBtn");
 
 //更新
 const changeTitle = () => {
-  const getNUmber = new FormData(threadsUpdate);
-  const inputTitle = getNUmber.get("number");
-  fetch("http://localhost/threads/" + inputTitle, {
+  const getUpdate = new FormData(threadsUpdate);
+  const inputNumber = getUpdate.get("number");
+  const inputTitle = getUpdate.get("title");
+  fetch("http://localhost/threads/" + inputNumber, {
     method: "PATCH",
     headers: {
       Authorization: "Bearer\t" + getToken,
