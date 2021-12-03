@@ -14,11 +14,26 @@
     </form>
     <form id="usersIdGet">
         <td>usersIdGet</td>
-        <td><input type="number" name="number" 　id="usersIdGetId" placeholder="id" /></td>
+        <td><input type="number" name="number" id="usersIdGetId" placeholder="id" /></td>
         <td><input type="button" id="usersIdGetSubmit" value="ユーザー情報取得" /></td>
         </tr>
     </form>
     <button id="moveUser">ユーザー情報を編集する</button>
+    <form id="makeThreads">
+       <textarea name="title" rows="2"></textarea>
+       <input type="button" id="makeThreadsBtn" value="スレッド作成">     
+    </form>
+    <form id="getThreads">
+        <input type="button" id="getThreadsBtn" value="スレッド取得">
+    </form>
+    <form id="getThreadsNunmber">
+        <input type="number" name="number" id="selectThreadsNumber">
+        <input type="button" id="getThreadsNunmberBtn" value="選んだIDのスレッドを取得">
+    </form>
+    <button id="moveThreads">スレッドを編集する</button>
+    <div id="threadsTitle"></div>
+
+
     <script src="../js/bbs.js"></script>
 </body>
 

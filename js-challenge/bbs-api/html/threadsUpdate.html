@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>スレッド編集</title>
+  </head>
+
+  <body>
+    <p>
+      タイトルを編集するスレッドのIDを選んで新しいタイトルを入力して下さい。
+    </p>
+    <form id="threadsUpdate">
+      <input type="number" name="number" id="selectThreadsNumber" />
+      <input
+        type="text"
+        name="title"
+        id="updateTitle"
+        placeholder="スレッド名"
+      />
+      <input type="button" value="更新" id="titleSubmit" class="upBtn" />
+    </form>
+    <script src="../js/threadsUpdate.js"></script>
+  </body>
+</html>
